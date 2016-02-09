@@ -13,7 +13,8 @@ def main():
     if (len(sys.argv) == 3):
         lines = int(sys.argv[2])
     else:
-        lines = 35    
+        lines = 35
+            
     try :
         img = Image.open(filename)
     except FileNotFoundError:
