@@ -13,6 +13,7 @@ class NewVisitorTest(unittest.TestCase):
     def test_can_start_a_list_and_retrieve_it_later(self):
         # user browses to homepage of app
         self.browser.get('http://localhost:8000')
+        self.browser.implicitly_wait(3)
 
         # user notices page title and header mention to-do lists
         self.assertIn('To-Do', self.browser.title)
